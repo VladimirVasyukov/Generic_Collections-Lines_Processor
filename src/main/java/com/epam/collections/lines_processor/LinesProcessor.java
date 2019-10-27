@@ -19,7 +19,7 @@ public class LinesProcessor {
      * @param points Points to generate lines
      * @return List of all available lines
      */
-    public List<Line> mapPointsToLines(List<Point> points) {
+    public List<Line> mapPointsToLines(Iterable<Point> points) {
         throw new UnsupportedOperationException("You need to implement this method");
     }
 
@@ -28,7 +28,7 @@ public class LinesProcessor {
      * @param lines List of lines to be reduced
      * @return List of lines without duplicates
      */
-    public List<Line> reduceLines(List<Line> lines) {
+    public List<Line> reduceLines(Iterable<Line> lines) {
         throw new UnsupportedOperationException("You need to implement this method");
     }
 

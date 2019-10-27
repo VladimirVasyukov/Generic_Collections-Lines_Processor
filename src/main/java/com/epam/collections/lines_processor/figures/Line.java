@@ -22,4 +22,8 @@ public class Line {
     public double getB() {
         throw new UnsupportedOperationException("You need to implement this method");
     }
+
+    public void setPoints(Set<Point> points) {
+        throw new UnsupportedOperationException("You need to implement this method");
+    }
 }
