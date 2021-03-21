@@ -47,7 +47,7 @@ public class LinesProcessorTestCase {
         Point point2 = new Point(3, 5);
         Line line = new Line(point1, point2);
         assertTrue(String.format("Coefficient k calculated wrongly for line (%s, %s)", point1, point2), Double.isInfinite(line.getK()));
-        assertTrue(String.format("Coefficient b calculated wrongly for line (%s, %s)", point1, point2), Double.isInfinite(line.getK()));
+        assertTrue(String.format("Coefficient b calculated wrongly for line (%s, %s)", point1, point2), Double.isInfinite(line.getB()));
     }
 
     @Test
