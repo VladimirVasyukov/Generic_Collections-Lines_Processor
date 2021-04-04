@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 import java.util.Locale;
 
 public class View {
-    private static final String VERTICAL_LINE = "Line: x = ";
     private static final String NOT_VERTICAL_LINE = "Line: y = ";
     private static final String FLOAT_FORMAT = "%.2f";
     private static final String FLOAT_FORMAT_PLUS = " + %.2f";
@@ -20,7 +19,7 @@ public class View {
         for (Line line : lines) {
             double yIntercept = line.getB();
             if (Double.isInfinite(yIntercept)) {
-                LOG.info(String.format("%s%d%s%s%n", VERTICAL_LINE, line.getVerticalLineX(), POINTS, line.getPoints()));
+                LOG.info(String.format("Line: x = %d points: = %s %n", line.getVerticalLineX(), line.getPoints()));
             } else {
                 StringBuilder stringBuilder = new StringBuilder();
                 Locale.setDefault(Locale.US);
